@@ -1,48 +1,48 @@
 # git_hub
-Introduction to Git
+Introduction to Git:-
 
-Git is a distributed version control system created by Linus Torvalds.
+* Git is a distributed version control system created by Linus Torvalds.
 
-Difference between centralized vs distributed systems explained.
+* Difference between centralized vs distributed systems explained.
 
-Git vs GitHub
+Git vs GitHub:-
 
-Git = version control tool.
+* Git = version control tool.
 
-GitHub = hosting platform for Git repositories.
+* GitHub = hosting platform for Git repositories.
 
-Installing Git
+Installing Git:-
 
-Steps to download and set up Git on your system.
+* Steps to download and set up Git on your system.
 
-Configuring username and email for commits.
+* Configuring username and email for commits.
 
-How Git Works
+How Git Works:-
 
-Local repository structure: working directory, staging area, and commit history.
+* Local repository structure: working directory, staging area, and commit history.
 
-Commands like git init, git status, git add, and git commit.
+* Commands like git init, git status, git add, and git commit.
 
-Hands-on Git (Single User Setup)
+Hands-on Git (Single User Setup):-
 
-Creating repositories.
+* Creating repositories.
 
-Adding and committing files.
+* Adding and committing files.
 
-Viewing commit history with git log.
+* Viewing commit history with git log.
 
-Ignoring Files
+Ignoring Files:-
 
-Using .gitignore to exclude files from tracking.
+* Using .gitignore to exclude files from tracking.
 
-Tracking Empty Directories
+* Tracking Empty Directories
 
-Git doesn’t track empty folders, but you can add placeholder files.
+* Git doesn’t track empty folders, but you can add placeholder files.
 
-Branching (Intro)
+Branching (Intro):-
 
-Creating new branches (git branch).
+* Creating new branches (git branch).
 
-Switching between branches (git checkout).
+* Switching between branches (git checkout).
 
-Branches allow parallel development without affecting the main codebase.
+* Branches allow parallel development without affecting the main codebase.
