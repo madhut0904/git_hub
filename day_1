@@ -1,0 +1,115 @@
+
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git --version
+git version 2.55.0.windows.5
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git init
+Reinitialized existing Git repository in C:/Users/MADHU T/OneDrive/Projects/SIH/.git/
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git add .
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ignore.txt
+
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git commit -m "initial commit"
+[main 72dda0d] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ignore.txt
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git log --oneline
+72dda0d (HEAD -> main) initial commit
+2408d5e (origin/main) feat: initial release of TransformAI enterprise platform - One Source. Every Communication Format.
+b14919e Initial commit
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git branch ignore
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git switch ignore
+Switched to branch 'ignore'
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git status
+On branch ignore
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.md
+        deleted:    tailwind.config.js
+        deleted:    tsconfig.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git add .
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git commit -m "change in another branch"
+[ignore 5193c2e] change in another branch
+ 3 files changed, 222 deletions(-)
+ delete mode 100644 README.md
+ delete mode 100644 tailwind.config.js
+ delete mode 100644 tsconfig.json
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git log --oneline
+5193c2e (HEAD -> ignore) change in another branch
+72dda0d (main) initial commit
+2408d5e (origin/main) feat: initial release of TransformAI enterprise platform - One Source. Every Communication Format.
+b14919e Initial commit
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git merge ignore
+Updating 72dda0d..5193c2e
+Fast-forward
+ README.md          | 143 -----------------------------------------------------
+ tailwind.config.js |  53 --------------------
+ tsconfig.json      |  26 ----------
+ 3 files changed, 222 deletions(-)
+ delete mode 100644 README.md
+ delete mode 100644 tailwind.config.js
+ delete mode 100644 tsconfig.json
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git switch ignore
+Switched to branch 'ignore'
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git merge ignore
+Already up to date.
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git commit -m "mergeing the branch"
+On branch ignore
+nothing to commit, working tree clean
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\MADHU T\OneDrive\Projects\SIH> git log --oneline
+5193c2e (HEAD -> main, ignore) change in another branch
+72dda0d initial commit
+2408d5e (origin/main) feat: initial release of TransformAI enterprise platform - One Source. Every Communication Format.
+b14919e Initial commit
+PS C:\Users\MADHU T\OneDrive\Projects\SIH>
